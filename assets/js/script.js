@@ -11,6 +11,7 @@ $(document).ready(function() {
         nome: false,
         whatsapp: false,
         email: false,
+        site: false,
         faturamento: false
     };
     
@@ -45,6 +46,21 @@ $(document).ready(function() {
     function validarEmail(email) {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
+    }
+    
+    // Função para validar URL
+    function validarURL(url) {
+        if (url.trim() === '') return true; // Campo opcional
+        
+        // Adiciona https:// se não tiver protocolo
+        if (!url.match(/^https?:\/\//i)) {
+            url = 'https://' + url;
+            $('#site').val(url);
+        }
+        
+        // Regex para validar URL
+        const regex = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/;
+        return regex.test(url);
     }
     
     // Função para validar WhatsApp (celular BR)
@@ -126,6 +142,24 @@ $(document).ready(function() {
         }
     });
     
+    // Validação e envio do Site (opcional)
+    $('#site').on('blur', function() {
+        const valor = $(this).val().trim();
+        
+        if (valor === '') {
+            $(this).removeClass('is-valid is-invalid');
+            return; // Campo opcional, não valida se estiver vazio
+        }
+        
+        if (!validarURL(valor)) {
+            $(this).removeClass('is-valid').addClass('is-invalid');
+            showAlert('URL inválida. Use um formato válido (exemplo: https://seusite.com.br)', 'error');
+        } else {
+            $(this).removeClass('is-invalid').addClass('is-valid');
+            enviarDado('site', $(this).val()); // Pega o valor atualizado com https://
+        }
+    });
+    
     // Envio do Faturamento
     $('input[name="faturamento"]').on('change', function() {
         const valor = $(this).val();
@@ -142,6 +176,7 @@ $(document).ready(function() {
         const nome = $('#nome').val().trim();
         const whatsapp = $('#whatsapp').val();
         const email = $('#email').val().trim();
+        const site = $('#site').val().trim();
         const faturamento = $('input[name="faturamento"]:checked').val();
         
         if (nome === '' || nome.length < 3) {
@@ -156,6 +191,11 @@ $(document).ready(function() {
         
         if (!validarEmail(email)) {
             $('#email').addClass('is-invalid');
+            isValid = false;
+        }
+        
+        if (site !== '' && !validarURL(site)) {
+            $('#site').addClass('is-invalid');
             isValid = false;
         }
         
@@ -180,6 +220,7 @@ $(document).ready(function() {
                 nome: nome,
                 whatsapp: whatsapp,
                 email: email,
+                site: site,
                 faturamento: faturamento,
                 controle: controleU,
                 timestamp: new Date().toISOString()
@@ -198,6 +239,7 @@ $(document).ready(function() {
                         nome: false,
                         whatsapp: false,
                         email: false,
+                        site: false,
                         faturamento: false
                     };
                     
