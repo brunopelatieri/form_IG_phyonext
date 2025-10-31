@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phyonext - IA Tech</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">  
+</head>
+<body>
+    <div class="form-container">
+        <!-- Formulário -->
+        <div id="formContent">
+            <div class="form-header">
+                <div class="ai-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                    </svg>
+                </div>
+                <h1 class="form-title">Transforme seu negócio com IA</h1>
+                <p class="form-subtitle">Preencha os dados e descubra como a inteligência artificial pode revolucionar sua empresa</p>
+            </div>
+            
+            <form id="contactForm">
+                <!-- Nome -->
+                <div class="mb-4">
+                    <label for="nome" class="form-label">Nome completo *</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                
+                <!-- WhatsApp -->
+                <div class="mb-4">
+                    <label for="whatsapp" class="form-label">WhatsApp *</label>
+                    <input type="text" class="form-control" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+                </div>
+                
+                <!-- Email -->
+                <div class="mb-4">
+                    <label for="email" class="form-label">E-mail *</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                
+                <!-- Faturamento -->
+                <div class="mb-4">
+                    <label class="form-label">Faturamento anual *</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="fat1" name="faturamento" value="Até R$100k/ano" required>
+                            <label for="fat1">Até R$100k/ano</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="fat2" name="faturamento" value="R$100K a R$500k/ano">
+                            <label for="fat2">R$100K a R$500k/ano</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="fat3" name="faturamento" value="R$500K a R$1M/ano">
+                            <label for="fat3">R$500K a R$1M/ano</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="fat4" name="faturamento" value="R$1M a R$5M/ano">
+                            <label for="fat4">R$1M a R$5M/ano</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="fat5" name="faturamento" value="+R$10M/ano">
+                            <label for="fat5">+R$10M/ano</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    Enviar dados
+                </button>
+            </form>
+        </div>
+        
+        <!-- Mensagem de agradecimento -->
+        <div class="thank-you-message" id="thankYouMessage">
+            <div class="thank-you-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+            </div>
+            <h2 class="thank-you-title">Obrigado!</h2>
+            <p class="thank-you-text">Seus dados foram enviados com sucesso. Em breve entraremos em contato para mostrar como a IA pode transformar seu negócio.</p>
+        </div>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery Mask Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
