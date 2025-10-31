@@ -26,3 +26,7 @@
     local_path: /
     targets:
     - ftp-phyonext
+  - action: Send notification to Telegram Channel
+    type: TELEGRAM
+    content: "[#$BUDDY_RUN_ID] $BUDDY_PIPELINE_NAME run by [$BUDDY_TRIGGERING_ACTOR]($BUDDY_TRIGGERING_ACTOR_URL)"
+    integration: telegram
