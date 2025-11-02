@@ -21,7 +21,7 @@ define('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmF
 
 // Configurações de segurança
 define('ALLOWED_ORIGINS', [
-    'https://phyonex.com',
+    'https://seudominio.com.br',
     'http://localhost',
     'http://localhost:3000'
 ]);
