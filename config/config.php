@@ -19,7 +19,7 @@ define('SUPABASE_KEY', 'sua-chave-anon-key-aqui');
 
 // Configurações de segurança
 define('ALLOWED_ORIGINS', [
-    'https://phyonex.com',
+    'https://seudominio.com.br',
     'http://localhost',
     'http://localhost:3000'
 ]);
