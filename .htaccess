@@ -1,14 +1,14 @@
 # Evitar listagem de diretórios
 Options -Indexes
 
-# Bloquear acesso .htaccess
-<Files ".htaccess">
-    Order allow,deny
-    Deny from all
-</Files
+# Bloquear acesso .htaccess - production
+#<Files ".htaccess">
+#    Order allow,deny
+#    Deny from all
+#</Files
 
-# Bloquear acesso direto aos logs
-<Files "*.log">
-    Order allow,deny
-    Deny from all
-</Files
+# Bloquear acesso direto aos logs - production
+#<Files "*.log">
+#    Order allow,deny
+#    Deny from all
+#</Files
