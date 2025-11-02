@@ -30,7 +30,7 @@ define('ALLOWED_ORIGINS', [
 define('ENVIRONMENT', 'production'); // production ou development
 
 // Configurações de log
-define('ENABLE_LOGS', true);
+define('ENABLE_LOGS', false);
 define('LOG_FILE', __DIR__ . '/logs/api.log');
 
 // Timezone
