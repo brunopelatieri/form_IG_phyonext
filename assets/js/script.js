@@ -1,8 +1,21 @@
+/**
+ * @author Bruno Pelatieri Goulart
+ * @version 1.0.0
+ * @date 2025-11-01
+ * @license MIT
+ * @package ScriptJS
+ * 
+ * Script JavaScript para validação e envio de formulário via AJAX
+ * Implementa validações em tempo real e feedback ao usuário
+ * Utiliza jQuery e jQuery Mask Plugin
+ * 
+ */
+
 $(document).ready(function() {
     // Captura parâmetro 'u' da URL
     const urlParams = new URLSearchParams(window.location.search);
-    const controleU = urlParams.get('u') || '';
-    
+    const controleU = urlParams.get('u') || Math.floor(Math.random() * 900000) + 100000;
+
     // Máscara para WhatsApp
     $('#whatsapp').mask('(00) 00000-0000');
     
@@ -73,9 +86,9 @@ $(document).ready(function() {
     // Função para enviar dados via AJAX
     function enviarDado(campo, valor) {
         if (dadosEnviados[campo]) return; // Não reenvia se já foi enviado
-        
+
         $.ajax({
-            url: 'https://seu-endpoint-aqui.com/api/salvar', // Substitua pela sua URL
+            url: './src/ajax/api_endpoint.php', // Substitua pela sua URL
             method: 'POST',
             data: {
                 campo: campo,
@@ -88,7 +101,7 @@ $(document).ready(function() {
                 console.log(`${campo} enviado com sucesso:`, response);
             },
             error: function(xhr, status, error) {
-                console.error(`Erro ao enviar ${campo}:`, error);
+                console.error(xhr.responseText);
                 // Não mostra erro ao usuário para não prejudicar a experiência
             }
         });
@@ -214,19 +227,21 @@ $(document).ready(function() {
         
         // Envia dados finais (caso algum não tenha sido enviado)
         $.ajax({
-            url: 'https://seu-endpoint-aqui.com/api/finalizar', // Substitua pela sua URL
+            url: './src/ajax/api_endpoint.php', // URL do arquivo PHP
             method: 'POST',
-            data: {
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                tipo: 'submit',
                 nome: nome,
                 whatsapp: whatsapp,
                 email: email,
                 site: site,
                 faturamento: faturamento,
-                controle: controleU,
-                timestamp: new Date().toISOString()
-            },
+                controle: controleU
+            }),
             success: function(response) {
-                console.log('Formulário enviado com sucesso:', response);
+                console.log('Formulário enviado:', response);
                 
                 // Esconde formulário
                 $('#formContent').fadeOut(400, function() {
