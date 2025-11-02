@@ -1,2 +1,5 @@
 
 *.code-workspace
+
+/config/config.php
+/.buddy/
