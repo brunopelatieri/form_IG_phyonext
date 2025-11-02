@@ -1,0 +1,13 @@
+Options -Indexes
+
+# Bloquear acesso .htaccess
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files
+
+# Bloquear acesso direto aos logs
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files
