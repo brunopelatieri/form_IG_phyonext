@@ -1,3 +1,4 @@
+# Evitar listagem de diretórios
 Options -Indexes
 
 # Bloquear acesso .htaccess

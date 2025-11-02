@@ -99,27 +99,26 @@ chmod 666 logs/api.log
 Crie um arquivo `.htaccess` na raiz do projeto:
 
 ```apache
-# Proteção de arquivos sensíveis
-<Files "config.php">
-    Order allow,deny
-    Deny from all
-</Files>
+# Evitar listagem de diretórios
+Options -Indexes
 
-<Files "SupabaseClient.php">
+# Bloquear acesso .htaccess
+<Files ".htaccess">
     Order allow,deny
     Deny from all
-</Files>
+</Files
+
+# Bloquear acesso direto aos logs
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files
 
 # Habilitar CORS (se necessário)
 Header set Access-Control-Allow-Origin "*"
 Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
 Header set Access-Control-Allow-Headers "Content-Type, Authorization"
 
-# Bloquear acesso direto aos logs
-<Files "*.log">
-    Order allow,deny
-    Deny from all
-</Files>
 ```
 
 ---
