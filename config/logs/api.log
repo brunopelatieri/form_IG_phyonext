@@ -1,0 +1,11 @@
+[2025-11-02 17:17:13] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"nome","valor":"Bruno P Goualrt","controle":"872629","timestamp":"2025-11-02T20:17:13.817Z"}}
+[2025-11-02 17:17:17] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"whatsapp","valor":"(19) 99249-6598","controle":"872629","timestamp":"2025-11-02T20:17:17.806Z"}}
+[2025-11-02 17:17:24] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"email","valor":"brunopelatieri@gmail.com","controle":"872629","timestamp":"2025-11-02T20:17:24.473Z"}}
+[2025-11-02 17:17:40] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"site","valor":"https:\/\/brunogoulart.com.br","controle":"872629","timestamp":"2025-11-02T20:17:40.191Z"}}
+[2025-11-02 17:17:40] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"faturamento","valor":"Até R$100k\/ano","controle":"872629","timestamp":"2025-11-02T20:17:40.971Z"}}
+[2025-11-02 17:18:09] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"nome","valor":"Bruno P Goualrt","controle":"274369","timestamp":"2025-11-02T20:18:09.866Z"}}
+[2025-11-02 17:18:21] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"whatsapp","valor":"(19) 99249-6598","controle":"274369","timestamp":"2025-11-02T20:18:21.980Z"}}
+[2025-11-02 17:19:03] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"email","valor":"brunopelatieri@gmail.com","controle":"274369","timestamp":"2025-11-02T20:19:03.877Z"}}
+[2025-11-02 17:19:09] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"site","valor":"https:\/\/brunogoulart.com.br","controle":"274369","timestamp":"2025-11-02T20:19:09.045Z"}}
+[2025-11-02 17:19:09] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"faturamento","valor":"Até R$100k\/ano","controle":"274369","timestamp":"2025-11-02T20:19:09.172Z"}}
+[2025-11-02 17:19:13] IP: 127.0.0.1 - {"method":"POST","data":{"tipo":"submit","nome":"Bruno P Goualrt","whatsapp":"(19) 99249-6598","email":"brunopelatieri@gmail.com","site":"https:\/\/brunogoulart.com.br","faturamento":"Até R$100k\/ano","controle":274369}}

@@ -121,6 +121,11 @@ try {
                 if (!SupabaseClient::validateWhatsApp($valor)) {
                     sendResponse(false, 'WhatsApp inválido.', null, 400);
                 }
+
+                $valor = preg_replace("/[^0-9]/", "", $valor); // Armazena só números
+
+                //Apago o registro que tenha o mesmo whatsapp em outro controle_u
+                $supabase->delete('lead_unqualified', ['whatsapp' => 'eq.'.$valor, 'controle_u' => 'neq.'.$controleU]);
                 break;
                 
             case 'email':
@@ -153,7 +158,7 @@ try {
         }
         
         // Verifica se já existe registro para este controleU
-        $existente = $supabase->select('lead_unqualified', ['controle_u' => $controleU]);
+        $existente = $supabase->select('lead_unqualified', ['controle_u' => 'eq.'.$controleU]);
         
         if (!empty($existente['data'])) {
             // Atualiza registro existente
@@ -162,7 +167,7 @@ try {
                 'updated_at' => date('Y-m-d H:i:s')
             ];
             
-            $result = $supabase->update('lead_unqualified', $updateData, ['controle_u' => $controleU]);
+            $result = $supabase->update('lead_unqualified', $updateData, ['controle_u' => 'eq.'.$controleU]);
             
             sendResponse(true, "Campo '{$campo}' atualizado com sucesso.", [
                 'campo' => $campo,
@@ -230,7 +235,7 @@ try {
         $leadQualified = [
             'controle_u' => $controleU,
             'nome' => $postData['nome'],
-            'whatsapp' => $postData['whatsapp'],
+            'whatsapp' => preg_replace("/[^0-9]/", "", $postData['whatsapp']),
             'email' => $postData['email'],
             'site' => $postData['site'] ?? null,
             'faturamento' => $postData['faturamento'],
@@ -239,12 +244,15 @@ try {
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ];
+
+        //Apago o registro que tenha o mesmo whatsapp em outro controle_u em lead_qualified
+        $supabase->delete('lead_qualified', ['whatsapp' => 'eq.'.$leadQualified['whatsapp'], 'controle_u' => 'neq.'.$controleU]);
         
         // Insere na tabela lead_qualified
         $result = $supabase->insert('lead_qualified', $leadQualified);
 
         // Delete da tabela lead_unqualified
-        $supabase->delete('lead_unqualified', ['controle_u' => $controleU]);
+        $supabase->delete('lead_unqualified', ['controle_u' => 'eq.'.$controleU]);
         
         sendResponse(true, 'Lead qualificado salvo com sucesso!', [
             'controle_u' => $controleU,

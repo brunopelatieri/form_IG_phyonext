@@ -65,7 +65,7 @@ class SupabaseClient {
         if (!empty($filters)) {
             $queryParams = [];
             foreach ($filters as $key => $value) {
-                $queryParams[] = "{$key}=eq.{$value}";
+                $queryParams[] = "{$key}={$value}";
             }
             $endpoint .= '?' . implode('&', $queryParams);
         }
@@ -88,7 +88,7 @@ class SupabaseClient {
         if (!empty($filters)) {
             $queryParams = [];
             foreach ($filters as $key => $value) {
-                $queryParams[] = "{$key}=eq.{$value}";
+                $queryParams[] = "{$key}={$value}";
             }
             $endpoint .= '?' . implode('&', $queryParams);
         }
@@ -110,7 +110,7 @@ class SupabaseClient {
         // Adiciona filtros
         if (!empty($filters)) {
             foreach ($filters as $key => $value) {
-                $endpoint .= "&{$key}=eq.{$value}";
+                $endpoint .= "&{$key}={$value}";
             }
         }
         
