@@ -9,3 +9,15 @@
 [2025-11-02 17:19:09] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"site","valor":"https:\/\/brunogoulart.com.br","controle":"274369","timestamp":"2025-11-02T20:19:09.045Z"}}
 [2025-11-02 17:19:09] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"faturamento","valor":"Até R$100k\/ano","controle":"274369","timestamp":"2025-11-02T20:19:09.172Z"}}
 [2025-11-02 17:19:13] IP: 127.0.0.1 - {"method":"POST","data":{"tipo":"submit","nome":"Bruno P Goualrt","whatsapp":"(19) 99249-6598","email":"brunopelatieri@gmail.com","site":"https:\/\/brunogoulart.com.br","faturamento":"Até R$100k\/ano","controle":274369}}
+[2025-11-02 17:31:48] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"nome","valor":"Bruno Goulart","controle":"957248","timestamp":"2025-11-02T20:31:48.115Z"}}
+[2025-11-02 17:31:52] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"whatsapp","valor":"(19) 99249-6598","controle":"957248","timestamp":"2025-11-02T20:31:52.106Z"}}
+[2025-11-02 17:31:55] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"email","valor":"brunopelatierigoulart@gmail.com","controle":"957248","timestamp":"2025-11-02T20:31:55.869Z"}}
+[2025-11-02 17:32:02] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"site","valor":"https:\/\/bru.ia.br","controle":"957248","timestamp":"2025-11-02T20:32:02.865Z"}}
+[2025-11-02 17:32:04] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"faturamento","valor":"Até R$100k\/ano","controle":"957248","timestamp":"2025-11-02T20:32:04.386Z"}}
+[2025-11-02 17:32:06] IP: 127.0.0.1 - {"method":"POST","data":{"tipo":"submit","nome":"Bruno Goulart","whatsapp":"(19) 99249-6598","email":"brunopelatierigoulart@gmail.com","site":"https:\/\/bru.ia.br","faturamento":"+R$10M\/ano","controle":957248}}
+[2025-11-02 17:33:16] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"nome","valor":"Bruno","controle":"950297","timestamp":"2025-11-02T20:33:16.185Z"}}
+[2025-11-02 17:33:40] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"whatsapp","valor":"(19) 99249-6598","controle":"950297","timestamp":"2025-11-02T20:33:40.179Z"}}
+[2025-11-02 17:33:42] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"email","valor":"brunopelatieri@gmail.com","controle":"950297","timestamp":"2025-11-02T20:33:42.903Z"}}
+[2025-11-02 17:33:54] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"site","valor":"https:\/\/bru.ia.br","controle":"950297","timestamp":"2025-11-02T20:33:54.606Z"}}
+[2025-11-02 17:33:56] IP: 127.0.0.1 - {"method":"POST","data":{"campo":"faturamento","valor":"R$500K a R$1M\/ano","controle":"950297","timestamp":"2025-11-02T20:33:56.827Z"}}
+[2025-11-02 17:33:59] IP: 127.0.0.1 - {"method":"POST","data":{"tipo":"submit","nome":"Bruno Pelatieri Goulart","whatsapp":"(19) 99249-6598","email":"brunopelatieri@gmail.com","site":"https:\/\/bru.ia.br","faturamento":"+R$10M\/ano","controle":950297}}
