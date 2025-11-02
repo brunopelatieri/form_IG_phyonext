@@ -72,8 +72,8 @@ Visual theme: **Blue Tech - Phyonext**.
   - [🔄 Funcionamento | How It Works](#-funcionamento--how-it-works)
   - [🔒 Segurança | Security](#-segurança--security)
   - [🧩 Troubleshooting](#-troubleshooting)
-  - [📝 Licença | License](#-licença--license)
   - [👤 Créditos | Credits](#-créditos--credits)
+  - [📝 Licença | License](#-licença--license)
 
 ---
 
@@ -197,15 +197,6 @@ php test.php
 
 ---
 
-## 📝 Licença | License
-
-© 2025 **Bruno Pelatieri Goulart**  
-Desenvolvido com ❤️ usando **PHP + Supabase**  
-
-Distribuído sob a licença **[MIT License](LICENSE)**.  
-
----
-
 ## 👤 Créditos | Credits
 
 🇧🇷 **Português:**  
@@ -213,3 +204,12 @@ Projeto desenvolvido por **Bruno Pelatieri Goulart** como parte de estudos sobre
 
 🇺🇸 **English:**  
 Project developed by **Bruno Pelatieri Goulart** as part of research on **lead automation with Supabase and PHP**, integrating best practices in security, performance, and clean architecture.
+
+---
+
+## 📝 Licença | License
+
+© 2025 **Bruno Pelatieri Goulart**  
+Desenvolvido com ❤️ usando **PHP + Supabase**  
+
+Distribuído sob a licença **[MIT License](LICENSE)**.  
