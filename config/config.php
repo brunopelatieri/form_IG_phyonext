@@ -14,8 +14,10 @@
  */
 
 // Configurações do Supabase
-define('SUPABASE_URL', 'https://seu-projeto.supabase.co');
-define('SUPABASE_KEY', 'sua-chave-anon-key-aqui');
+//define('SUPABASE_URL', 'https://seu-projeto.supabase.co');
+//define('SUPABASE_KEY', 'sua-chave-anon-key-aqui');
+define('SUPABASE_URL', 'https://pdvumgsluxvqqiivurkc.supabase.co');
+define('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBkdnVtZ3NsdXh2cXFpaXZ1cmtjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTMzMjA0OTcsImV4cCI6MjA2ODg5NjQ5N30.tMr0myyknLID0AxPS9Mwnv68E_wqq0TLuWmP_idfwak');
 
 // Configurações de segurança
 define('ALLOWED_ORIGINS', [
