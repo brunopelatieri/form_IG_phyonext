@@ -8,7 +8,7 @@ _Lead Capture System with PHP + Supabase_
   <a href="https://supabase.com" target="_blank" title="Supabase">
     <img src="https://img.shields.io/badge/Supabase-Backend%20as%20a%20Service-3FCF8E?logo=supabase&logoColor=white" alt="Supabase Badge"/>
   </a>
-  <a href="https://phyonex.com/material/form.html" target="_blank" title="Ver Demo / Live Demo">
+  <a href="https://phyonext.com/material/form.html" target="_blank" title="Ver Demo / Live Demo">
     <img src="https://img.shields.io/badge/Demo-Phyonext-blue?logo=google-chrome&logoColor=white" alt="Demo Badge"/>
   </a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="HTML5">
@@ -40,7 +40,7 @@ Ideal para uso em **automação com Instagram**, enviando o link do formulário 
 Tema visual: **Azul Tecnologia - Phyonext**.
 
 🔗 **Demo online:**  
-👉 [Acesse aqui](https://phyonex.com/material/form.html)
+👉 [Acesse aqui](https://phyonext.com/material/form.html)
 
 ---
 
@@ -50,7 +50,7 @@ Perfect for **Instagram automation**, where the form link is sent directly to us
 Visual theme: **Blue Tech - Phyonext**.
 
 🔗 **Live demo:**  
-👉 [Open here](https://phyonex.com/material/form.html)
+👉 [Open here](https://phyonext.com/material/form.html)
 
 ---
 
