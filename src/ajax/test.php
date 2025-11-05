@@ -10,4 +10,3 @@ try {
 } catch (Exception $e) {
     echo "❌ Erro: " . $e->getMessage();
 }
-?>
